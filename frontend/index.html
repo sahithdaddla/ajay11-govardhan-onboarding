@@ -372,7 +372,7 @@ input[type="number"]::-webkit-inner-spin-button {
     
     <div class="container">
         <div class="header">
-        <img src="Astolite_Logo-removebg-preview.1.png" alt="Company Logo" class="company-logo"> 
+        <img src="Astolite_Logo-removebg-preview.png" alt="Company Logo" class="company-logo"> 
             <h1>Employee Onboarding Form</h1>
             <p>Please complete all sections of this form to finalize your onboarding process</p>
         </div>
@@ -1387,7 +1387,7 @@ function validateEducationYearSequence() {
                         submitBtn.disabled = true;
                         submitBtn.textContent = 'Submitting...';
         
-                        const response = await fetch('http://54.166.206.245:3000/save-employee', {
+                        const response = await fetch('http://44.223.23.14:3408/save-employee', {
                             method: 'POST',
                             body: formData
                         });
