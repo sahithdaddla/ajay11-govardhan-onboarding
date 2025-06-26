@@ -13,7 +13,7 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Expose the port your app runs on (from server.js, likely 3000)
+# Expose the port your app runs on (from server.js, likely 3408)
 EXPOSE 3408
 
 # Start the application
