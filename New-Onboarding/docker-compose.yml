@@ -5,7 +5,7 @@ services:
     build: ./backend
     container_name: backend-service35
     ports:
-      - "3420:3420"
+      - "3069:3069"
     env_file:
       - ./backend/server.env
     depends_on:
@@ -19,7 +19,7 @@ services:
     build: ./frontend
     container_name: employee-frontend35
     ports:
-      - "8039:80"
+      - "8253:80"
     networks:
       - onboarding-net
 
@@ -27,7 +27,7 @@ services:
     build: ./hr-page
     container_name: hr-frontend35
     ports:
-      - "8040:80"
+      - "8254:80"
     networks:
       - onboarding-net
 
@@ -39,7 +39,7 @@ services:
       POSTGRES_PASSWORD: admin123
       POSTGRES_DB: onboarding
     ports:
-      - "5420:5432"
+      - "5498:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
