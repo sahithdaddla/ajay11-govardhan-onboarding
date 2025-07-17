@@ -14,11 +14,11 @@ const PORT = process.env.PORT || 3069;
 app.use(cors({
   origin: [
     process.env.FRONTEND_URL,
-    "http://13.49.49.147:8253",
-    "http://13.49.49.147:3069",
+    "http://16.170.235.131:8253",
+    "http://16.170.235.131:3069",
     "http://127.0.0.1:5500",
     "http://localhost:5500",
-    "http://13.49.49.147:8254"
+    "http://16.170.235.131:8254"
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
